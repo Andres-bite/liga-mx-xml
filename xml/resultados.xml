@@ -6,10 +6,12 @@
             <local>
                 <nombre>Pumas UNAM</nombre>
                 <marcador>2</marcador>
+                <estadisticas posesion="53%" tiros="12" tirosPuerta="6" faltas="10" tarjetasAmarillas="1" tarjetasRojas="0" tirosEsquina="11"/>
             </local>
             <visitante>
                 <nombre>Atlético San Luis</nombre>
                 <marcador>3</marcador>
+                <estadisticas posesion="47%" tiros="11" tirosPuerta="7" faltas="9" tarjetasAmarillas="2" tarjetasRojas="0" tirosEsquina="2"/>
             </visitante>
         </partido>
     </jornada>

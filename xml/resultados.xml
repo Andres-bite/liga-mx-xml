@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga nombre="Liga MX" temporada="Apertura 2026">
+    <jornada numero="10" fecha="2026-09-27">
+        <partido id="P101" estado="Finalizado">
+            <estadio>Estadio Olímpico Universitario</estadio>
+            <local>
+                <nombre>Pumas UNAM</nombre>
+                <marcador>2</marcador>
+            </local>
+            <visitante>
+                <nombre>Atlético San Luis</nombre>
+                <marcador>3</marcador>
+            </visitante>
+        </partido>
+    </jornada>
+</liga>

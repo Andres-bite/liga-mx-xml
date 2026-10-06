@@ -1,0 +1,32 @@
+ <!ELEMENT liga (jornada+)>
+        <!ATTLIST liga
+                nombre CDATA #REQUIRED
+                temporada CDATA #REQUIRED>
+
+        <!ELEMENT jornada (partido+)>
+        <!ATTLIST jornada
+                numero CDATA #REQUIRED
+                fecha CDATA #REQUIRED>
+
+        <!ELEMENT partido (estadio, local, visitante)>
+        <!ATTLIST partido
+                id ID #REQUIRED
+                estado CDATA #REQUIRED>
+
+        <!ELEMENT estadio (#PCDATA)>
+
+        <!ELEMENT local (nombre, marcador, estadisticas?)>
+        <!ELEMENT visitante (nombre, marcador, estadisticas?)>
+
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT marcador (#PCDATA)>
+
+        <!ELEMENT estadisticas EMPTY>
+        <!ATTLIST estadisticas
+                posesion CDATA #REQUIRED
+                tiros CDATA #REQUIRED
+                tirosPuerta CDATA #REQUIRED
+                faltas CDATA #REQUIRED
+                tarjetasAmarillas CDATA #REQUIRED
+                tarjetasRojas CDATA #REQUIRED
+                tirosEsquina CDATA #REQUIRED>

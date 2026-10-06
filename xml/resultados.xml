@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
 <liga nombre="Liga MX" temporada="Apertura 2026">
     <jornada numero="10" fecha="2026-09-27">
         <partido id="P101" estado="Finalizado">

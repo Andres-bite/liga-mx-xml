@@ -1,50 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ligaMX torneo="Apertura 2026" jornada="10" fechaInicio="2026-09-25" fechaFin="2026-09-27">
-  <partidos>
-    <partido id="J10-01" fecha="2026-09-25" hora="19:00:00">
-      <local nombre="Atlante" goles="4"/>
-      <visitante nombre="Monterrey" goles="2"/>
-      <estadisticas totalGoles="6" ganador="Atlante"/>
-    </partido>
-    <partido id="J10-02" fecha="2026-09-25" hora="21:00:00">
-      <local nombre="Tijuana" goles="2"/>
-      <visitante nombre="Atlas" goles="3"/>
-      <estadisticas totalGoles="5" ganador="Atlas"/>
-    </partido>
-    <partido id="J10-03" fecha="2026-09-26" hora="16:50:00">
-      <local nombre="Cruz Azul" goles="3"/>
-      <visitante nombre="Toluca" goles="3"/>
-      <estadisticas totalGoles="6" ganador="Empate"/>
-    </partido>
-    <partido id="J10-04" fecha="2026-09-26" hora="17:07:00">
-      <local nombre="Guadalajara" goles="0"/>
-      <visitante nombre="Queretaro" goles="2"/>
-      <estadisticas totalGoles="2" ganador="Queretaro"/>
-    </partido>
-    <partido id="J10-05" fecha="2026-09-26" hora="21:05:00">
-      <local nombre="Santos Laguna" goles="1"/>
-      <visitante nombre="Pachuca" goles="0"/>
-      <estadisticas totalGoles="1" ganador="Santos Laguna"/>
-    </partido>
-    <partido id="J10-06" fecha="2026-09-26" hora="21:10:00">
-      <local nombre="Tigres UANL" goles="1"/>
-      <visitante nombre="Puebla" goles="0"/>
-      <estadisticas totalGoles="1" ganador="Tigres UANL"/>
-    </partido>
-    <partido id="J10-07" fecha="2026-09-27" hora="12:00:00">
-      <local nombre="Pumas UNAM" goles="2"/>
-      <visitante nombre="Atletico San Luis" goles="3"/>
-      <estadisticas totalGoles="5" ganador="Atletico San Luis"/>
-    </partido>
-    <partido id="J10-08" fecha="2026-09-27" hora="19:00:00">
-      <local nombre="Leon" goles="2"/>
-      <visitante nombre="Juarez" goles="1"/>
-      <estadisticas totalGoles="3" ganador="Leon"/>
-    </partido>
-    <partido id="J10-09" fecha="2026-09-27" hora="21:10:00">
-      <local nombre="Necaxa" goles="2"/>
-      <visitante nombre="America" goles="4"/>
-      <estadisticas totalGoles="6" ganador="America"/>
-    </partido>
-  </partidos>
-</ligaMX>
+<!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
+<liga nombre="Liga MX" temporada="Apertura 2026">
+    <jornada numero="10" fecha="2026-09-27">
+        <partido id="P101" estado="Finalizado">
+            <estadio>Estadio Olímpico Universitario</estadio>
+            <local>
+                <nombre>Pumas UNAM</nombre>
+                <marcador>2</marcador>
+                <estadisticas posesion="53%" tiros="12" tirosPuerta="6" faltas="10" tarjetasAmarillas="1" tarjetasRojas="0" tirosEsquina="11"/>
+            </local>
+            <visitante>
+                <nombre>Atlético San Luis</nombre>
+                <marcador>3</marcador>
+                <estadisticas posesion="47%" tiros="11" tirosPuerta="7" faltas="9" tarjetasAmarillas="2" tarjetasRojas="0" tirosEsquina="2"/>
+            </visitante>
+        </partido>
+    </jornada>
+</liga>

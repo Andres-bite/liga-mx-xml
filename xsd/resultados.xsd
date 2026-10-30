@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ligaMX">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="partidos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="partido" minOccurs="9" maxOccurs="9">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="local" type="equipoType"/>
+                    <xs:element name="visitante" type="equipoType"/>
+                    <xs:element name="estadisticas" type="estadisticasType"/>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required"/>
+                  <xs:attribute name="fecha" type="xs:date" use="required"/>
+                  <xs:attribute name="hora" type="xs:time" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="torneo" type="xs:string" use="required"/>
+      <xs:attribute name="jornada" type="xs:positiveInteger" use="required"/>
+      <xs:attribute name="fechaInicio" type="xs:date" use="required"/>
+      <xs:attribute name="fechaFin" type="xs:date" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="equipoType">
+    <xs:attribute name="nombre" type="xs:string" use="required"/>
+    <xs:attribute name="goles" type="xs:nonNegativeInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="estadisticasType">
+    <xs:attribute name="totalGoles" type="xs:nonNegativeInteger" use="required"/>
+    <xs:attribute name="ganador" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:schema>
